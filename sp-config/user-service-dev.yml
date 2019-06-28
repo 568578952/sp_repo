@@ -1,0 +1,19 @@
+#测试使用数据sp
+sp:
+  user-service:
+    users: "[{\"id\":7, \"username\":\"abc\",\"password\":\"123\"},{\"id\":8, \"username\":\"def\",\"password\":\"456\"},{\"id\":9, \"username\":\"ghi\",\"password\":\"789\"}]"
+
+spring:
+  application:
+    name: user-service
+    
+server:
+  port: 8101
+
+#添加eureka注册配置
+eureka:
+  client:
+    service-url:
+    #defaultZone，默认位置，可以修改为具体地理位置，比如：beiJing, shangHai, shenZhen 等，表示 eureka 服务器的部署位置
+    #分别向两台eureka服务器注册
+      defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
