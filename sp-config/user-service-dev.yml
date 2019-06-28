@@ -17,7 +17,8 @@ eureka:
     #defaultZone，默认位置，可以修改为具体地理位置，比如：beiJing, shangHai, shenZhen 等，表示 eureka 服务器的部署位置
     #分别向两台eureka服务器注册
       defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
-      
+
+#配置需要暴露的端点    
 management:
   endpoints:
     web:
