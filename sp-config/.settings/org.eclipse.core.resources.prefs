@@ -1,3 +1,5 @@
 eclipse.preferences.version=1
+encoding/item-service-dev.yml=UTF-8
+encoding/order-service-dev.yml=UTF-8
 encoding/user-service-dev.yml=UTF-8
 encoding/zuul-dev.yml=UTF-8
