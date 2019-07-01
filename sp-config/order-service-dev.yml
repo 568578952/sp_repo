@@ -9,8 +9,8 @@ spring:
     password: admin
     
     
-server:
-  port: 8201
+#server:
+ # port: 8201
 
 #添加eureka注册配置
 eureka:
